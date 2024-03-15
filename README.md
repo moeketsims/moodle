@@ -12,7 +12,7 @@ sudo apt-get update
 
 # Install newer versions of the packages you have
 sudo apt-get upgrade -y
-
+```
 
 ## Installing Nodejs
 ```bash
