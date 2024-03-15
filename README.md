@@ -53,3 +53,13 @@ cdk --version
 ```bash
 git clone https://github.com/aws-samples/aws-cdk-ecs-refarch-moodle.git
 ```
+# Change Directory
+Ensure you have docker running and then change the director as indicated below
+```bash
+cd aws-cdk-ecs-refarch-moodle/src
+```
+# Build Moodle Image
+To build Moodle docker image with the name moodleimage run 
+```bash
+docker build -t moodleimage image/src
+```
