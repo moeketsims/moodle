@@ -24,4 +24,19 @@ sudo apt-get install -y nodejs
 ```
 Adjust the Node.js version in the URL (`setup_21.x`) if a different version is required for your Moodle setup. This will help ensure users are getting the most relevant and secure version of Node.js for their needs.
 
+# Upgrading npm
+
+npm, the Node Package Manager, is a crucial tool for managing dependencies in Node.js projects. To ensure you have the latest features and security updates, it's important to keep npm up-to-date. Follow the steps below to upgrade npm on your system.
+
+## Windows
+
+For Windows users, the best way to upgrade npm is to re-download and install Node.js from the [official website](https://nodejs.org/). This process will automatically upgrade npm along with Node.js.
+
+## macOS and Linux
+
+For macOS and Linux users, you can upgrade npm to the latest version by running the following command in your terminal:
+
+```bash
+sudo npm install -g npm@latest
+
 
