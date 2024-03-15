@@ -38,5 +38,11 @@ For macOS and Linux users, you can upgrade npm to the latest version by running 
 
 ```bash
 sudo npm install -g npm@latest
+```
 
+# Installing the AWS Cloud Development Kit (CDK)
+The AWS CDK allows you to define your cloud resources in a familiar programming language. To install the AWS CDK, ensure you have Node.js and npm installed, then run the following command
+```bash
+npm install -g aws-cdk
+```
 
