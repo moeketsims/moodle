@@ -14,6 +14,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 
+## Installing Nodejs
 ```bash
 # Add the NodeSource repository for Node.js 21.x
 curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
