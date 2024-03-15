@@ -63,3 +63,23 @@ To build Moodle docker image with the name moodleimage run
 ```bash
 docker build -t moodleimage image/src
 ```
+# Authenticating with Amazon ECR
+
+To push or pull images from Amazon Elastic Container Registry (ECR), you must authenticate your Docker client to the registry. These instructions assume you have already installed the AWS CLI and Docker on your machine.
+
+## Prerequisites
+
+- AWS CLI: Ensure you have the [AWS CLI](https://aws.amazon.com/cli/) installed and configured with the appropriate access credentials and default region.
+- Docker: Make sure [Docker](https://www.docker.com/) is installed on your system.
+
+## Authenticating Docker to Amazon ECR
+
+1. Retrieve the authentication token and authenticate your Docker client to the registry using the AWS CLI:
+
+    ```bash
+    aws ecr get-login-password --region <your-region> | docker login --username AWS --password-stdin <your-account-id>.dkr.ecr.<your-region>.amazonaws.com
+    ```
+
+    Replace `<your-region>` with your AWS region (e.g., `us-west-2`) and `<your-account-id>` with your AWS account ID.
+
+2. After successfully authenticating, you can push or pull images using Docker commands. For example, to push an image to your
