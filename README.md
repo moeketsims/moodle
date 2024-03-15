@@ -8,4 +8,7 @@ curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 
 # Install Node.js
 sudo apt-get install -y nodejs
+```
+Adjust the Node.js version in the URL (`setup_21.x`) if a different version is required for your Moodle setup. This will help ensure users are getting the most relevant and secure version of Node.js for their needs.
+
 
